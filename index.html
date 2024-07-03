@@ -118,7 +118,12 @@
           <div class="subscribe_input">
             <img src="./img/mail.svg" alt="" />
             <input type="text" placeholder="Enter your e-mail address" />
-            <input type="submit" value="Subscribe" class="button" />
+            <input
+              id="open_modal"
+              type="submit"
+              value="Subscribe"
+              class="button"
+            />
           </div>
         </section>
       </div>
@@ -160,5 +165,43 @@
         </ul>
       </div>
     </footer>
+    <div
+      id="modal"
+      style="background: url(./img/modal-bg-img.png) center / contain no-repeat"
+    >
+      <img src="./img/cat-subscribe.png" alt="고양이 사진" />
+      <div>
+        <h2>Thank you!</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+      </div>
+      <button id="close_modal" class="button">OK! I Love HODU</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      // 모달 열기
+      function openModal() {
+        var modal = document.getElementById("modal");
+        modal.style.display = "block";
+      }
+
+      // 모달 닫기
+      function closeModal() {
+        var modal = document.getElementById("modal");
+        modal.style.display = "none";
+      }
+
+      // 모달 열기 버튼 클릭 이벤트 핸들러
+      var modalOpenButton = document.getElementById("open_modal");
+      modalOpenButton.addEventListener("click", function () {
+        openModal();
+      });
+
+      // 모달 닫기 버튼 클릭 이벤트 핸들러
+      var modalCloseButton = document.getElementById("close_modal");
+      modalCloseButton.addEventListener("click", function () {
+        closeModal();
+      });
+    </script>
   </body>
 </html>
