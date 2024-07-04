@@ -118,16 +118,23 @@
             Lorem Ipsum has been the industry's standard dummy text
           </p>
         </div>
-        <div class="subscribe_input">
-          <img src="./img/mail.svg" alt="" />
-          <input type="text" placeholder="Enter your e-mail address" />
+        <form class="subscribe_input" method="post">
+          <div class="input_email">
+            <img src="./img/mail.svg" alt="" />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your e-mail address"
+              required
+            />
+          </div>
           <input
             id="open_modal"
             type="submit"
             value="Subscribe"
             class="button"
           />
-        </div>
+        </form>
       </div>
     </section>
     <footer>

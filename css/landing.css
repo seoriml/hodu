@@ -271,8 +271,12 @@ header .wrapper {
   margin: 0 18px 0 28px;
 }
 
-.subscribe_input input[type="text"] {
+.subscribe_input input[type="email"] {
   width: 100%;
+}
+
+.input_email {
+  display: flex;
 }
 
 /* 푸터 */
@@ -433,13 +437,34 @@ footer .logo img {
     display: block;
     padding: 0 0 230px 0;
   }
-
   .main4 .button {
     float: right;
     margin-top: 30px;
   }
 
+  .subscribe {
+    padding: 36px 32px;
+  }
   .subscribe_input {
     display: block;
+    background: none;
+  }
+  .input_email {
+    background-color: white;
+    border-radius: 60px;
+    padding: 12px;
+  }
+  .subscribe_input img {
+    margin: 0 16px;
+  }
+  #open_modal {
+    float: right;
+    margin-top: 20px;
   }
 }
+
+/* #open_modal {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+} */
