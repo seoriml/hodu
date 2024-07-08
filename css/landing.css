@@ -517,7 +517,7 @@ footer .logo img {
   /* 고양이 사진들 */
   .cat_images {
     padding: 40px 0 60px 0;
-    overflow: hidden;
+    overflow-x: scroll;
     gap: 20px;
     /* 우측 margin을 음수 값으로 설정하여 wrapper 밖으로 튀어나가도록 함 */
     margin-right: -20px;
